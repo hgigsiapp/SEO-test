@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Yay you found my description" /> <!-- Default meta description -->
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- <title>React App</title> -->
+</head>
+<body>
+  <h1>Test HTML Page</h1>
+  <button id="fetchButton">Fetch Data</button>
+  <div id="output"></div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <script>
+    // Make API call to fetch meta description data
+    fetch('http://localhost:3001/api/metaDescription')
+      .then(response => response.json())
+      .then(data => {
+        // Update meta description
+        const metaDescription = data.metaDescription;
+        document.querySelector('meta[name="description"]').setAttribute('content', metaDescription);
+      })
+      .catch(error => console.error('Error fetching meta description:', error));
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    // Make API call on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('http://localhost:3001/api/test')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('output').textContent = data;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    });
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    // Button click event handler
+    document.getElementById('fetchButton').addEventListener('click', function() {
+      fetch('http://localhost:3001/api/testBtn')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('output').textContent = data;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    });
+  </script>
+</body>
 </html>
