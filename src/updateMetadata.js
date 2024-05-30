@@ -14,10 +14,10 @@ const requestOptions = {
   redirect: "follow"
 };
 
-  let hithere = ""
+  let hithere = {}
   fetch("https://icanhazdadjoke.com/", requestOptions)
     .then((response) =>  response.text())
-    .then((result) => hithere = result.joke)
+    .then((result) => hithere = result)
 
   console.log("this is the result", hithere)
   return (
