@@ -1,11 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-
-
 // Function to update metadata using React Helmet
-const Element = async (newDescription) => {
-  
+const Element = (newDescription) => {
   return (
     <div>
     <Helmet>
@@ -14,6 +11,6 @@ const Element = async (newDescription) => {
     <div>Hi How Ah Ya!</div>
     </div>
   );
-  }
+};
 
 export default Element;
