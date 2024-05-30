@@ -6,7 +6,7 @@ const Element = (newDescription) => {
   return (
     <div>
     <Helmet>
-      <meta name="description" content={newDescription} />
+      <meta name="description" content="the element description" />
     </Helmet>
     <div>Hi How Ah Ya!</div>
     </div>

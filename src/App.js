@@ -10,7 +10,7 @@ function App() {
                 <title>My Title</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-            <Element newDescription="New description for my page that I am getting from Element" />
+            <Element />
     </div>
   );
 }
