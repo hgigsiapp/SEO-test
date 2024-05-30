@@ -21,7 +21,7 @@ fetch("https://icanhazdadjoke.com/", requestOptions)
   return (
     <div>
     <Helmet>
-      <meta name="description" content="the new element description" />
+      <meta name="description" content={result.joke} />
     </Helmet>
     <div>Hi How Ah Ya!</div>
     </div>
