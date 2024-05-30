@@ -5,7 +5,7 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <!-- <meta name="description" content="Yay you found my description" /> Default meta description -->
+  <meta name="description" content="Yay you found my default description" /> 
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>React App</title>
@@ -14,37 +14,38 @@
   <h1>Test HTML Page</h1>
   <button id="fetchButton">Fetch Data</button>
   <div id="output"></div>
-
+  <script src="updateMetadata.js"></script>
   <script>
     // Make API call to fetch meta description data
-    fetch('http://localhost:3001/api/metaDescription')
-      .then(response => response.json())
-      .then(data => {
-        // Update meta description
-        const metaDescription = data.metaDescription;
-        document.querySelector('meta[name="description"]').setAttribute('content', metaDescription);
-      })
-      .catch(error => console.error('Error fetching meta description:', error));
+    // fetch('http://localhost:3001/api/metaDescription')
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     // Update meta description
+    //     const metaDescription = data.metaDescription;
+    //     document.querySelector('meta[name="description"]').setAttribute('content', metaDescription);
+    //   })
+    //   .catch(error => console.error('Error fetching meta description:', error));
 
     // Make API call on page load
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('http://localhost:3001/api/test')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('output').textContent = data;
-        })
-        .catch(error => console.error('Error fetching data:', error));
-    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   fetch('http://localhost:3001/api/test')
+    //     .then(response => response.text())
+    //     .then(data => {
+    //       document.getElementById('output').textContent = data;
+    //     })
+    //     .catch(error => console.error('Error fetching data:', error));
+    // });
 
     // Button click event handler
-    document.getElementById('fetchButton').addEventListener('click', function() {
-      fetch('http://localhost:3001/api/testBtn')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('output').textContent = data;
-        })
-        .catch(error => console.error('Error fetching data:', error));
-    });
+    // document.getElementById('fetchButton').addEventListener('click', function() {
+    //   fetch('http://localhost:3001/api/testBtn')
+    //     .then(response => response.text())
+    //     .then(data => {
+    //       document.getElementById('output').textContent = data;
+    //     })
+    //     .catch(error => console.error('Error fetching data:', error));
+    // });
+    
   </script>
 </body>
 </html>
