@@ -19,7 +19,7 @@ const requestOptions = {
     .then((response) =>  response.text())
     .then((result) => hithere = result)
 
-  console.log("this is the result", hithere)
+  // console.log("this is the result", hithere)
   return (
     <div>
     <Helmet>
