@@ -15,17 +15,18 @@ const requestOptions = {
 };
 
 fetch("https://icanhazdadjoke.com/", requestOptions)
-  .then((response) => response.text())
+  .then((response) =>  response.text())
   .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+
+  console.log("this is the result", result)
   return (
     <div>
     <Helmet>
-      <meta name="description" content={result.joke} />
+      <meta name="description" content="the new element description" />
     </Helmet>
     <div>Hi How Ah Ya!</div>
     </div>
   );
-};
+  }
 
 export default Element;
