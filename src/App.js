@@ -11,6 +11,8 @@ function App() {
       <Helmet>
                 <title>My Title</title>
                 <meta name="description" content="Helmet application" />
+                <meta property="og:title" content="Facebook Friendly title" />
+                <meta property="og:description" content="hi facebook" />
             </Helmet>
             <Element />
     </div>
