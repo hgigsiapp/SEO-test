@@ -1,5 +1,5 @@
 import React from 'react';
-import aiGovImage from './Ai-gov.png';
+import aiGovImage from './images/Ai-gov.png';
 
 const Body = () => {
     return (
