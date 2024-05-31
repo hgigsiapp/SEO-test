@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SEO-test/static/css/main.f855e6bc.css",
-    "main.js": "/SEO-test/static/js/main.6bef2e82.js",
+    "main.js": "/SEO-test/static/js/main.a1521404.js",
     "static/js/453.50b5167c.chunk.js": "/SEO-test/static/js/453.50b5167c.chunk.js",
     "static/media/american_privacy_rights_act_cheat_sheet_thumbnail.jpg": "/SEO-test/static/media/american_privacy_rights_act_cheat_sheet_thumbnail.8bda770c333df8ec1200.jpg",
     "static/media/ftc_enforcement_trends_thumbnail.jpg": "/SEO-test/static/media/ftc_enforcement_trends_thumbnail.7294249996be387e18e8.jpg",
@@ -10,11 +10,11 @@
     "static/media/logo.svg": "/SEO-test/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SEO-test/index.html",
     "main.f855e6bc.css.map": "/SEO-test/static/css/main.f855e6bc.css.map",
-    "main.6bef2e82.js.map": "/SEO-test/static/js/main.6bef2e82.js.map",
+    "main.a1521404.js.map": "/SEO-test/static/js/main.a1521404.js.map",
     "453.50b5167c.chunk.js.map": "/SEO-test/static/js/453.50b5167c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.6bef2e82.js"
+    "static/js/main.a1521404.js"
   ]
 }
