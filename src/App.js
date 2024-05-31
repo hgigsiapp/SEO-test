@@ -18,6 +18,10 @@ function App() {
         property="og:url"
         content="hgigsiapp.github.io/SEO-test/"
       />
+      <meta
+        property="og:image"
+        content="./images/Ai-gov.png"
+      />
       <meta property="twitter:title" content="twitter Friendly title" />
         <meta property="twitter:description" content="hi twitter" />
         <meta
