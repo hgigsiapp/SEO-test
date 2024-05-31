@@ -18,8 +18,8 @@ function App() {
         property="og:url"
         content="hgigsiapp.github.io/SEO-test/"
       /> */}
-      <meta property="twitter:title" content="twitter Friendly title" />
-        <meta property="twitter:description" content="hi twitter" />
+      {/* <meta property="twitter:title" content="twitter Friendly title" />
+        <meta property="twitter:description" content="hi twitter" /> */}
         {/* <meta
         property="twitter:url"
         content="hgigsiapp.github.io/SEO-test/"
