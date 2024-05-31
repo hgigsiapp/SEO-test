@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Element from './updateMetadata'
+import Body from './Body'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
@@ -15,6 +16,7 @@ function App() {
         <meta property="og:description" content="hi facebook" />
       </Helmet>
       <Element />
+      <Body />
     </div>
     </HelmetProvider>
   );
