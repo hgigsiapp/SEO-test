@@ -14,16 +14,16 @@ function App() {
         <meta name="description" content="Helmet application" />
         <meta property="og:title" content="Facebook Friendly title" />
         <meta property="og:description" content="hi facebook" />
-        {/* <meta
+        <meta
         property="og:url"
         content="hgigsiapp.github.io/SEO-test/"
-      /> */}
-      {/* <meta property="twitter:title" content="twitter Friendly title" />
-        <meta property="twitter:description" content="hi twitter" /> */}
-        {/* <meta
+      />
+      <meta property="twitter:title" content="twitter Friendly title" />
+        <meta property="twitter:description" content="hi twitter" />
+        <meta
         property="twitter:url"
         content="hgigsiapp.github.io/SEO-test/"
-      /> */}
+      />
       </Helmet>
       <Element />
       <Body />
