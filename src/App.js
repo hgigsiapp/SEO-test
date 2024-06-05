@@ -3,11 +3,10 @@ import './App.css';
 import Element from './updateMetadata'
 import Body from './Body'
 
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import {Helmet} from "react-helmet";
 
 function App() {
   return (
-    <HelmetProvider>
     <div className="App">
       <Helmet>
         <title>My Title</title>
@@ -32,7 +31,6 @@ function App() {
       <Element />
       <Body />
     </div>
-    </HelmetProvider>
   );
 }
 
