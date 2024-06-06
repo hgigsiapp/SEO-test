@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Element from './updateMetadata';
 import Body from './Body';
@@ -8,7 +7,6 @@ import { Helmet } from 'react-helmet';
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Helmet>
           <title>My Title</title>
@@ -27,10 +25,11 @@ function App() {
             content="hgigsiapp.github.io/SEO-test/"
           />
         </Helmet>
-        <Route path="/" exact component={Element} />
-        <Route path="/body" component={Body} />
+        <Routes>
+          <Route path="/" exact element={<Element />} />
+          <Route path="/body" element={<Body />} />
+        </Routes>
       </div>
-    </Router>
   );
 }
 

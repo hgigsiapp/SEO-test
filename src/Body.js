@@ -29,7 +29,7 @@ const Body = () => {
     return (
         <div>
             <Helmet>
-        <meta name="description" content={joke || "the new body description"} />
+        <meta name="description" content={joke + "the new body description"} />
       </Helmet>
       <p>Current Path: {location.pathname}</p>
             <p>Hello</p>
