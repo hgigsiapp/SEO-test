@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import {Helmet} from "react-helmet";
 import image1 from './images/Ai-gov.png';
 import image2 from './images/Iapp-news.png'
 import image3 from './images/american_privacy_rights_act_cheat_sheet_thumbnail.jpg'
 import image4 from './images/ftc_enforcement_trends_thumbnail.jpg'
-import React, { useState, useEffect } from 'react';
-import {Helmet} from "react-helmet";
+
 
 const Body = () => {
     const [joke, setJoke] = useState('');
