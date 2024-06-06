@@ -27,7 +27,7 @@ function App() {
             content="hgigsiapp.github.io/SEO-test/"
           />
         </Helmet>
-        <Route path="/" component={Element} />
+        <Route path="/" exact component={Element} />
         <Route path="/body" component={Body} />
       </div>
     </Router>
