@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Helmet} from "react-helmet";
+import { useLocation } from 'react-router-dom';
 import image1 from './images/Ai-gov.png';
 import image2 from './images/Iapp-news.png'
 import image3 from './images/american_privacy_rights_act_cheat_sheet_thumbnail.jpg'
@@ -8,6 +9,7 @@ import image4 from './images/ftc_enforcement_trends_thumbnail.jpg'
 
 const Body = () => {
     const [joke, setJoke] = useState('');
+    const location = useLocation();
 
   useEffect(() => {
     fetch('https://api.chucknorris.io/jokes/random')
@@ -29,6 +31,7 @@ const Body = () => {
             <Helmet>
         <meta name="description" content={joke || "the new body description"} />
       </Helmet>
+      <p>Current Path: {location.pathname}</p>
             <p>Hello</p>
             <img src={image1} alt="AI Gov" />
             <p>Hola</p>
