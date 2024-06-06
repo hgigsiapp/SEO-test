@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes, Link} from 'react-router-dom';
 import './App.css';
 import Element from './updateMetadata';
 import Body from './Body';
@@ -25,10 +25,21 @@ function App() {
             content="hgigsiapp.github.io/SEO-test/"
           />
         </Helmet>
-        <Routes>
-          <Route path="/" exact element={<Element />} />
-          <Route path="/body" element={<Body />} />
-        </Routes>
+        
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/element">Element</Link>
+                    </li>
+                    <li>
+                        <Link to="/body">Body</Link>
+                    </li>
+                </ul>
+            </nav>
+            <Routes>
+                <Route path="/element" element={<Element />} />
+                <Route path="/body" element={<Body />} />
+            </Routes>
       </div>
   );
 }
