@@ -39,8 +39,8 @@ function App() {
                 </ul>
             </nav>
             <Routes>
-                <Route path="/element" element={<Element />} />
-                <Route path="/body" element={<Body />} />
+                <Route path="/SEO-test/element" element={<Element />} />
+                <Route path="/SEO-test/body" element={<Body />} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
       </div>
