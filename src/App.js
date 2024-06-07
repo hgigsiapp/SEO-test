@@ -31,10 +31,10 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/element">Element</Link>
+                        <Link to="/SEO-test/element">Element</Link>
                     </li>
                     <li>
-                        <Link to="/body">Body</Link>
+                        <Link to="/SEO-test/body">Body</Link>
                     </li>
                 </ul>
             </nav>
