@@ -3,6 +3,8 @@ import { Route, Routes, Link} from 'react-router-dom';
 import './App.css';
 import Element from './updateMetadata';
 import Body from './Body';
+import NoPage from './NoPage';
+
 import { Helmet } from 'react-helmet';
 
 function App() {
@@ -39,6 +41,7 @@ function App() {
             <Routes>
                 <Route path="/element" element={<Element />} />
                 <Route path="/body" element={<Body />} />
+                <Route path="*" element={<NoPage />} />
             </Routes>
       </div>
   );
