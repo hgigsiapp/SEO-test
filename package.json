@@ -4,7 +4,10 @@
   "homepage": "https://hgigsiapp.github.io/SEO-test",
   "private": true,
   "reactSnap": {
-    "include": ["/", "/element", "/body", "/#"]
+    "include": [
+      "/element",
+      "/body"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
