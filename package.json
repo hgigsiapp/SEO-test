@@ -6,7 +6,10 @@
   "reactSnap": {
     "include": [
       "/element",
-      "/body"
+      "/body",
+      "/",
+      "/SEO-test/#",
+      "/#"
     ]
   },
   "dependencies": {
