@@ -5,10 +5,12 @@ import Element from './updateMetadata';
 import Body from './Body';
 import NoPage from './NoPage';
 
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
   return (
+    <HelmetProvider>
       <div className="App">
         <Helmet>
           <title>My Title</title>
@@ -44,6 +46,7 @@ function App() {
                 <Route path="*" element={<NoPage />} />
             </Routes>
       </div>
+      </HelmetProvider>
   );
 }
 

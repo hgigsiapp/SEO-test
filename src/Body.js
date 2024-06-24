@@ -1,5 +1,5 @@
 import React from 'react';
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet-async";
 import { useLocation } from 'react-router-dom';
 import image1 from './images/Ai-gov.png';
 import image2 from './images/Iapp-news.png'
