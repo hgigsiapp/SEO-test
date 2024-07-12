@@ -6,10 +6,12 @@ import image2 from './images/Iapp-news.png'
 import image3 from './images/american_privacy_rights_act_cheat_sheet_thumbnail.jpg'
 import image4 from './images/ftc_enforcement_trends_thumbnail.jpg'
 import {
-    Menu, MenuButton, MenuList, MenuItem, Button
+    Menu, MenuButton, Button
   } from '@chakra-ui/react';
+import MenuListContent from './MenuListContent';
 
 
+  const data = ["hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg", "hiddeglnrglkergnelkrgnelkrg", "hikjbergkjbergkjbergkjbergkjberg", "hikjbergk;jergkjergergergergerg"];
 const Body = () => {
     // const [joke, setJoke] = useState('');
     const location = useLocation();
@@ -41,29 +43,7 @@ const Body = () => {
             <MenuButton isActive={isOpen} as={Button}>A
                 {isOpen ? 'Close' : 'Open'}
             </MenuButton>
-            <MenuList>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-                <MenuItem>Download</MenuItem>
-            </MenuList>
+            <MenuListContent data={data} />
         </>
         )}
         </Menu>
