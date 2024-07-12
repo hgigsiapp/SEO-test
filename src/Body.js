@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Helmet} from "react-helmet-async";
 import { useLocation } from 'react-router-dom';
 import image1 from './images/Ai-gov.png';
@@ -6,7 +6,7 @@ import image2 from './images/Iapp-news.png'
 import image3 from './images/american_privacy_rights_act_cheat_sheet_thumbnail.jpg'
 import image4 from './images/ftc_enforcement_trends_thumbnail.jpg'
 import {
-    Menu, MenuButton, Button
+    Menu, MenuButton, IconButton, Hide, Flex
   } from '@chakra-ui/react';
 import MenuListContent from './MenuListContent';
 
@@ -15,6 +15,8 @@ import MenuListContent from './MenuListContent';
 const Body = () => {
     // const [joke, setJoke] = useState('');
     const location = useLocation();
+    const [defOpen, setOpen] = useState();
+    // const [mobileOpen, setMobileOpen] = useState();
 
 //   useEffect(() => {
 //     fetch('https://api.chucknorris.io/jokes/random')
@@ -37,13 +39,36 @@ const Body = () => {
                 <title>The Body title</title>
         <meta name="description" content="the new Body description" />
       </Helmet>
-      <Menu>
+      <Menu defaultIsOpen={defOpen}
+            onClose={() => {
+                setOpen(false);
+             }}
+    //   onOpen={() => {
+    //     setMenuGroup(false);
+    //   }}
+      eventListeners={{ resize: true, scroll: false }}
+      isLazy
+      closeOnBlur={false}>
         {({ isOpen }) => (
         <>
-            <MenuButton isActive={isOpen} as={Button}>A
-                {isOpen ? 'Close' : 'Open'}
+            <MenuButton border="5px solid orange"
+            as={IconButton}
+            size={'lg'}
+            // aria-label="Options"
+
+            variant="outline"
+            color={'inherit'}
+            onClick={() => {
+              setOpen(!defOpen);
+            }}>A
+            
             </MenuButton>
+            {!defOpen && (
+          <Hide above="lg">
+            <Flex flex={1}></Flex>
             <MenuListContent data={data} />
+            </Hide>
+        )}
         </>
         )}
         </Menu>
