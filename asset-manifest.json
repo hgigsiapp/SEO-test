@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/SEO-test/static/css/main.f855e6bc.css",
-    "main.js": "/SEO-test/static/js/main.901989c7.js",
+    "main.js": "/SEO-test/static/js/main.1f858ad4.js",
     "static/media/american_privacy_rights_act_cheat_sheet_thumbnail.jpg": "/SEO-test/static/media/american_privacy_rights_act_cheat_sheet_thumbnail.8bda770c333df8ec1200.jpg",
     "static/media/ftc_enforcement_trends_thumbnail.jpg": "/SEO-test/static/media/ftc_enforcement_trends_thumbnail.7294249996be387e18e8.jpg",
     "static/media/Ai-gov.png": "/SEO-test/static/media/Ai-gov.fe0d509eb315a992d015.png",
     "static/media/Iapp-news.png": "/SEO-test/static/media/Iapp-news.770614865c8c187d65eb.png",
     "index.html": "/SEO-test/index.html",
     "main.f855e6bc.css.map": "/SEO-test/static/css/main.f855e6bc.css.map",
-    "main.901989c7.js.map": "/SEO-test/static/js/main.901989c7.js.map"
+    "main.1f858ad4.js.map": "/SEO-test/static/js/main.1f858ad4.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.901989c7.js"
+    "static/js/main.1f858ad4.js"
   ]
 }
