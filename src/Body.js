@@ -29,7 +29,8 @@ const Body = () => {
     return (
         <div>
             <Helmet>
-        <meta name="description" content="the new body description" />
+                <title>The Body title</title>
+        <meta name="description" content="the new Body description" />
       </Helmet>
       <p>Current Path: {location.pathname}</p>
             <p>Hello</p>

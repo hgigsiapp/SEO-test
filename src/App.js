@@ -4,12 +4,14 @@ import './App.css';
 import Element from './updateMetadata';
 import Body from './Body';
 import NoPage from './NoPage';
+import { ChakraProvider } from '@chakra-ui/react';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 function App() {
   return (
+    <ChakraProvider>
     <HelmetProvider>
       <div className="App">
         <Helmet>
@@ -47,6 +49,7 @@ function App() {
             </Routes>
       </div>
       </HelmetProvider>
+      </ChakraProvider>
   );
 }
 
