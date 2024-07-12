@@ -16,6 +16,7 @@ const Body = () => {
     // const [joke, setJoke] = useState('');
     const location = useLocation();
     const [defOpen, setOpen] = useState();
+    const [back, setBack] = useState(false);
     // const [mobileOpen, setMobileOpen] = useState();
 
 //   useEffect(() => {
@@ -66,7 +67,7 @@ const Body = () => {
             {!defOpen && (
           <Hide above="lg">
             <Flex flex={1}></Flex>
-            <MenuListContent data={data} />
+            <MenuListContent data={data} viewBack={setBack} back={back} />
             </Hide>
         )}
         </>

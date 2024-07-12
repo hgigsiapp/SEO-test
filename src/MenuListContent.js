@@ -3,7 +3,7 @@ import { Flex, Text, Box } from '@chakra-ui/react';
 
 export default function MenuListContent(props) {
   const {
-    data,
+    data, viewBack
   } = props;
   console.log("data", data)
   return (
@@ -13,7 +13,7 @@ export default function MenuListContent(props) {
       top={'100%'}
       bg={'yellow'}
       borderRadius={'none'}
-      // border={'limegreen dashed 2px'}
+      border={'limegreen dashed 2px'}
       m={0}
       minW={'100%'}
       overflow-y={'auto'}
@@ -28,11 +28,11 @@ export default function MenuListContent(props) {
           >
            
               <Flex
-                // onClick={() => {
+                onClick={() => {
                 //   setSMV(true);
-                //   setSMD(item.menu.menu[0]);
-                //   viewBack(true);
-                // }}
+                //   setSMD(item);
+                  viewBack(true);
+                }}
                 px={'30px'}
                 borderBottom={`1px solid green`}
                 borderTop={i === 0 ? `1px solid green` : 'none'}
