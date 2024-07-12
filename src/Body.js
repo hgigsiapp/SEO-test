@@ -5,6 +5,9 @@ import image1 from './images/Ai-gov.png';
 import image2 from './images/Iapp-news.png'
 import image3 from './images/american_privacy_rights_act_cheat_sheet_thumbnail.jpg'
 import image4 from './images/ftc_enforcement_trends_thumbnail.jpg'
+import {
+    Menu, MenuButton, MenuList, MenuItem, Button
+  } from '@chakra-ui/react';
 
 
 const Body = () => {
@@ -32,6 +35,27 @@ const Body = () => {
                 <title>The Body title</title>
         <meta name="description" content="the new Body description" />
       </Helmet>
+      <Menu>
+        {({ isOpen }) => (
+        <>
+            <MenuButton isActive={isOpen} as={Button}>A
+                {isOpen ? 'Close' : 'Open'}
+            </MenuButton>
+            <MenuList>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+                <MenuItem>Download</MenuItem>
+            </MenuList>
+        </>
+        )}
+        </Menu>
       <p>Current Path: {location.pathname}</p>
             <p>Hello</p>
             <img src={image1} alt="AI Gov" />
